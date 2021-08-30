@@ -15,7 +15,7 @@ body {
 
 .container {
     width: 800px;
-    height: 350px;
+    height: 450px;
     margin: 200px auto;
     /* left: 50%;
     top: 50%; */
@@ -72,5 +72,35 @@ body {
     text-align: center;
     margin: .4rem auto;
     color: orange;
+}
+
+@media screen and (max-width: 825px) {
+    .container {
+        width: 80%;
+    }
+    .intro,
+    .isoEval {
+        width: 80%;
+        font-size: .8em;
+        margin: 0 auto;
+    }
+    .input-holder {
+        width: 100%;
+    }
+    .text-field {
+        width: 70%;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .container {
+        min-width: 340px;
+        height: 400px;
+    }
+    .intro,
+    .isoEval {
+        font-size: .6em;
+    }
+
 }
 
