@@ -20,13 +20,13 @@ Isogram Checker
 
 An isogram is a word that has no repeating letters, consecutive or non-consecutive. This application accepts a user's input and evaluates whether or not it is an isogram. Additionally, if the input does not fit the criteria for evaluation, the user is prompted to try again. 
 
-![Isogram Checker](https://user-images.githubusercontent.com/66088725/124177675-62425b00-da65-11eb-9035-50ad775ead50.JPG)
+![Isogram Checker](https://user-images.githubusercontent.com/66088725/131414018-4fd4c5b7-53ab-4569-a79a-d1ed2d9e50c1.png)
 
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://github.com/Pia007/RandomQuoteAndColorGenerator)
-- Live Site URL: [Isogram Checker](https://pia007.github.io/RandomQuoteAndColorGenerator/)
+- Solution URL: [GitHub Repository](https://github.com/Pia007/Isogram)
+- Live Site URL: [Isogram Checker](https://pia007.github.io/Isogram/)
 
 ## My process
 
@@ -36,6 +36,7 @@ An isogram is a word that has no repeating letters, consecutive or non-consecuti
 - JavaScript
   - Document Object Model
   - ES6 
+- CSS
 
 ### What I learned
 
