@@ -28,7 +28,7 @@ body {
     background: black;
     border-radius: 8px;
     border: 10px ridge white;
-    box-shadow: 5px 20pxrgba(31, 31, 31, 25%);
+    box-shadow: 5px 20px rgba(31, 31, 31, 25%);
 
 }
 .intro {
