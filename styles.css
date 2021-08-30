@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body {
+    font-family: var(--roboto);
+    font-size: 36px;
+    background: gray;
+    
+}
+
+.container {
+    width: 800px;
+    height: 350px;
+    margin: 200px auto;
+    /* left: 50%;
+    top: 50%; */
+    /* transform: translate(-50%, -50%); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    background: black;
+    border-radius: 8px;
+    border: 10px ridge white;
+    box-shadow: 5px 20pxrgba(31, 31, 31, 25%);
+
+}
+.intro {
+    text-align: center;
+}
+.input-holder {
+    /* width: 70%; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+.text-field {
+    width: 400px;
+    height: 40px;
+    margin: .5rem auto;
+    font-size: 20px;
+    color: white;
+    background: black;
+    outline: none;
+    border: none;
+    border-bottom: 5px ridge white;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.btn-check {
+    width: 150px;
+    height: 40px;
+    margin: .5rem auto;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background:black;
+    border: 5px ridge white;;
+    border-radius: 8px;
+    padding-top: 4px;
+}
+.isoEval {
+    text-align: center;
+    margin: .4rem auto;
+    color: orange;
+}
+

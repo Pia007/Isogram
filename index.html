@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"  content="Pia Torain">
+    <meta name="description"  content="An app that checks to see if the user's input is an isogram.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Isogram Checker | Pia Torain</title>
+</head>
+<body id="page">
+    <div id=iso-container class="container">
+        <form id="form">
+            <p class="intro">
+                An <strong><em>isogram</em></strong> is a word that has no repeating letters, consecutive or non-consecutive. 
+            </p>
+            <div class="input-holder">
+                <input id="isogramText" class="text-field" name="isogramText" type="text" placeholder="Enter Text Here" autocomplete= "off" o>
+
+                <button id="check-input" class="btn-check" type="button" >CHECK IT!</button> 
+            </div>
+            <p id="evaluation"></p>
+            <p id="evalOne" class="isoEval">
+                Try again! This is not a single word and has atleast one number and special character.
+            </p>
+            <p id="evalTwo" class="isoEval">
+                Try again! This is not a single word and has atleast one special character.
+            </p>
+            <p id="evalThree" class="isoEval">
+                Try again! This is not a single word and has atleast one number.
+            </p>
+            <p id="evalFour" class="isoEval">
+                Try again! This word has atleast one number and special character.
+            </p>
+            <p id="evalFive" class="isoEval">
+                Try again! This is not a single word.
+            </p>
+            <p id="evalSix" class="isoEval">
+                Try again! This word has atleast one special character.
+            </p>
+            <p id="evalSeven" class="isoEval">
+                Try again! This word has atleast one number.
+            </p>
+            <p id="evalEight" class="isoEval">
+                This word is NOT an isogram.
+            </p>
+            <p id="evalNine" class="isoEval">
+                This word is an isogram.
+            </p>
+        </form>
+
+
+    </div>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
