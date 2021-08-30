@@ -17,9 +17,6 @@ body {
     width: 800px;
     height: 450px;
     margin: 200px auto;
-    /* left: 50%;
-    top: 50%; */
-    /* transform: translate(-50%, -50%); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,14 +25,13 @@ body {
     background: black;
     border-radius: 8px;
     border: 10px ridge white;
-    box-shadow: 5px 20px rgba(31, 31, 31, 25%);
+
 
 }
 .intro {
     text-align: center;
 }
 .input-holder {
-    /* width: 70%; */
     height: auto;
     display: flex;
     flex-direction: column;
