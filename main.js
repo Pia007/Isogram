@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 hideAll();
                 isFalse.style.display = "block";
                 isFalse.style.color = "#FF1919";
-                break;
+                
             }
 
             if(specialChar.test(str) && numbers.test(str) && str.indexOf(' ') >= 1 ){
