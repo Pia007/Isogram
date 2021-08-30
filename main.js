@@ -57,6 +57,13 @@ document.addEventListener("DOMContentLoaded", () => {
         // Use a For Loop to check the string for special char, spaces and numbers as well as evaluate the array for duplicate substrings
             // Starting at index 0, as long as the index is less than the length of the string minus 1, add 1 to the index and continue the loop
                 // assign variables to regex expression for special characters and numbers
+                // assign letter variable to the lowercase substring at index i
+                // assign count variable to the value of 0.
+            // For Loop 
+                // Starting at index 0, as long as the index is less than the length of the string minus 1, add 1 to the index and continue the loop
+                // if letter is strictly equal to the lowrcase character at index n, increment the count by 1  
+                // if the count is equals 2 or is greater than 2, then the string is NOT a isogram 
+                    // Evaluation ends
             // IF any character in the string matches the regex pattern for special characters, numbers and has a space after the first character, the string will not be evaluated
                 // ELSE IF CONDITONS:
                     // STRING WILL NOT BE EVALUATED IF:
@@ -66,14 +73,12 @@ document.addEventListener("DOMContentLoaded", () => {
                         //  string has a space after the 1st character.
                         //  string has at least one number.
                         //  string has at least one special character.
-                        //  array contains substrings that repeat; therefore; the string is NOT an isogram
         // Otherwise, the string contains characters that do not repeat and IS an isogram.
     
     
         for (let i = 0; i < lenthOfString - 1; i++){
             let specialChar = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
             let numbers = /\d/
-            // var isogram = true;
             var count = 0;
             letter = strArray[i].toLowerCase();
 
@@ -88,6 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 isFalse.style.color = "#FF1919";
                 break;
             }
+
             if(specialChar.test(str) && numbers.test(str) && str.indexOf(' ') >= 1 ){
                 hideAll();
                 isAll.style.display = "block";

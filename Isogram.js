@@ -1,3 +1,5 @@
+// File soley use to test function
+
 // THE CHALLENGE
 // An isogram is a word that has no repeating letters, consecutive or non-consecutive. 
 // Implement a function called isIsogram that determines whether a string that contains only letters is an isogram (returns true or false). 
