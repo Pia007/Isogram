@@ -11,17 +11,25 @@
     <title>Isogram Checker | Pia Torain</title>
 </head>
 <body id="page">
+
+    
     <div id=iso-container class="container">
         <form id="form">
             <p class="intro">
                 An <strong><em>isogram</em></strong> is a word that has no repeating letters, consecutive or non-consecutive. 
             </p>
-            <div class="input-holder">
-                <input id="isogramText" class="text-field" name="isogramText" type="text" placeholder="Enter Text Here" autocomplete= "off" o>
 
+            <!-- INPUT FIELD -->
+            <div class="input-holder">
+                <!-- USER INPUT -->
+                <input id="isogramText" class="text-field" name="isogramText" type="text" placeholder="Enter Text Here" autocomplete= "off" />
+
+                <!-- SUBMIT BUTTON -->
                 <button id="check-input" class="btn-check" type="submit" >CHECK IT!</button> 
             </div>
-            <p id="evaluation"></p>
+             <!--/ INPUT FIELD -->
+            
+            <!-- RESPONSED BASED ON CRITERIA EVALUATION -->
             <p id="evalOne" class="isoEval">
                 Try again! This is not a single word and has atleast one number and special character.
             </p>
@@ -49,9 +57,8 @@
             <p id="evalNine" class="isoEval">
                 This word is an isogram.
             </p>
+            <!-- /RESPONSED BASED ON CRITERIA EVALUATION -->
         </form>
-
-
     </div>
 
     

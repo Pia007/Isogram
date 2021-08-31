@@ -25,8 +25,6 @@ body {
     background: black;
     border-radius: 8px;
     border: 10px ridge white;
-
-
 }
 .intro {
     text-align: center;
@@ -64,12 +62,14 @@ body {
     border-radius: 8px;
     padding-top: 4px;
 }
+/* STYLING RESPONSES */
 .isoEval {
     text-align: center;
     margin: .4rem auto;
     color: orange;
 }
 
+/* MAX-WIDTH 825PX*/
 @media screen and (max-width: 825px) {
     .container {
         width: 80%;
@@ -86,8 +86,9 @@ body {
     .text-field {
         width: 70%;
     }
-    
 }
+
+/* MAX-WIDTH 500PX */
 @media screen and (max-width: 500px) {
     .container {
         min-width: 340px;
@@ -97,6 +98,5 @@ body {
     .isoEval {
         font-size: .6em;
     }
-
 }
 
