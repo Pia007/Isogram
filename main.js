@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+// document.addEventListener("DOMContentLoaded", () => {
     
     const form = document.getElementById("form");
     // const eval = document.getElementById("evaluation");
@@ -108,51 +108,64 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 3000);
 
         };
-        
+    };    
          
-        function isIsogram() {
-            var str = document.getElementById("isogramText").value;
+    function isIsogram() {
+        var str = document.getElementById("isogramText").value;
 
-            // assign variable isogram to boolean true  -- funcion assumes isogram is true
-            var isogram = true;
+        // create empty arrays
+        var newLetters = [];
+        var letters = [];
 
-            // create empy arrays
-            var newLetters = [];
-            var letters = [];
+        // assign variable isogram to boolean true  -- funcion assumes isogram is true
+        var isogram = true;
 
-            // assign count variable to the value of 0.
-            var count = 0;
-            
-            // letters array is populated with substrings of the user's input
-            letters = str.toLowerCase().split('');
+        // assign count variable to the value of 0.
+        var count = 0;
         
-            // For Loop
-                //Check to see if the substrings in the array newLetters match any subtring in the array letters, index -1,
-                    // if there is NOT a match, add the substring to the newLetters array
-                        // the string IS an isogram
-                    // else, isogram is false,  the match occurred more than once (index > -1) 
-                        // the string is NOT an isogram
-            for (let i = 0; i < letters.length - 1; i++){
+        // letters array is populated with substrings of the user's input and sorted in alphabetical order by default
+        letters = str.toLowerCase().split('');
+        letters = letters.sort();
+
+        
+    
+        // For Loop
+            //Check to see if the substrings in the array newLetters match any subtring in the array letters, index -1,
+                // if there is NOT a match, add the substring to the newLetters array
+                    // the string IS an isogram
+                // else, isogram is false,  the match occurred more than once (index > -1) 
+                    // the string is NOT an isogram
+        for (var i = 0; i < letters.length - 1; i++){
+            count = 0
+            if(newLetters.indexOf(letters[i]) == -1) {
+                newLetters += letters[i];  
+            }
+            else {
+                isogram = false;
                 
-                if(newLetters.indexOf(letters[i]) == -1) {
-                    newLetters += letters[i];
-                    hideAll();
-                    isTrue.style.display = "block";
-                    isTrue.style.color = "#00FF2A";
-                }
-                else {
-                    isogram = false;
-                    hideAll();
-                    isFalse.style.display = "block";
-                    isFalse.style.color = "#FF1919";
-                }
-                clearForm();
             };
+            if(isogram){
+                hideAll();
+                isTrue.style.display = "block";
+                isTrue.style.color = "#00FF2A";  
+            }else{
+                hideAll();
+                isFalse.style.display = "block";
+                isFalse.style.color = "#FF1919";
+            }
+           
+            clearForm();
+        };
+        function clearForm() {
+            setTimeout(function() {
+                form.reset();
+                hideAll();
+            }, 3000);
 
-        }
-    }    
+        };
+    }   
     
     
 
-});
+// });
 
