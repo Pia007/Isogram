@@ -18,7 +18,7 @@ Isogram Checker
 
 Isogram Checker
 
-An isogram is a word that has no repeating letters, consecutive or non-consecutive. This application accepts a user's input and evaluates whether or not it is an isogram. Additionally, if the input does not fit the criteria for evaluation, the user is prompted to try again. 
+An isogram is a word that has no repeating letters, consecutive or non-consecutive. This application accepts a user's input and evaluates whether or not it is an isogram. Additionally, if the input does not fit the criteria for evaluation, the user is prompted to try again. Note: The input automatically clears after 3 seconds. 
 
 ![Isogram Checker](https://user-images.githubusercontent.com/66088725/131414018-4fd4c5b7-53ab-4569-a79a-d1ed2d9e50c1.png)
 
