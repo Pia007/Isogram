@@ -4,35 +4,21 @@ const form = document.getElementById("form");
 const button = document.getElementById("check-input");
 
 //RESPONSES: using the id to assign constants to criteria responses in index.html
-const isAll = document.getElementById("evalOne");
-const isSingleSpec = document.getElementById("evalTwo");
-const isSingleNum = document.getElementById("evalThree");
-const isNumSpec= document.getElementById("evalFour");
-const isNotSingle = document.getElementById("evalFive");
-const isSpecial = document.getElementById("evalSix");
-const isNumbers = document.getElementById("evalSeven");
-const isFalse = document.getElementById("evalEight");
-const isTrue = document.getElementById("evalNine");
+const response = document.getElementById("eval");
+const isTrue = document.getElementById("isTrue");
+const isFalse = document.getElementById("isFalse");
 
-// HIDES ALL RESPONSES
-hideAll();
-function hideAll() {
-    isAll.style.display = "none";
-    isSingleSpec.style.display = "none";
-    isSingleNum.style.display = "none";
-    isNumSpec.style.display = "none";
-    isNotSingle.style.display = "none";
-    isSpecial.style.display = "none";
-    isNumbers.style.display = "none";
-    isFalse.style.display = "none";
-    isTrue.style.display = "none";
-};
+function hideRes() {
+    response.style.display = "none"
+    isTrue.style.display = "none"
+    isFalse.style.display = "none"
+}
 
 // CLEARS the form 2.5sec after submission
 function clearForm() {
     setTimeout(function() {
         form.reset();
-        hideAll();
+        hideRes();
     }, 2500);
 };
 
@@ -71,38 +57,32 @@ function evalString(str) {
         let numbers = /\d/
         
         if(specialChar.test(str) && numbers.test(str) && str.indexOf(' ') >= 1 ){
-            hideAll();
-            isAll.style.display = "block";
-        
-        }else if(str.indexOf(' ') >= 1 && specialChar.test(str)){
-            hideAll();
-            isSingleSpec.style.display = "block";
-            
-            
-        }else if(str.indexOf(' ') >= 1 && numbers.test(str)){
-            hideAll();
-            isSingleNum.style.display = "block";
-            
-            
-        }else if(specialChar.test(str) && numbers.test(str)){
-            hideAll();
-            isNumSpec.style.display = "block";
-            
-            
-        }else if(str.indexOf(' ') >= 0){
-            hideAll();
-            isNotSingle.style.display = "block";
-            
-            
-        }else if(specialChar.test(str)) {
-            hideAll();
-            isSpecial.style.display = "block";
-            
-            
-        }else if(numbers.test(str)) {
-            hideAll();
-            isNumbers.style.display = "block";
+            response.innerHTML = "Try again! " + `${str}` + " is not a single word and has atleast one number and special character."
+            response.style.display = "block";
 
+        }else if(str.indexOf(' ') >= 1 && specialChar.test(str)){
+            response.innerHTML = "Try again! "+ `${str}` +  " is not a single word and has atleast one special character."
+            response.style.display = "block";
+
+        }else if(str.indexOf(' ') >= 1 && numbers.test(str)){
+            response.innerHTML = "Try again! " + `${str}` + " is not a single word and has atleast one number."
+            response.style.display = "block";
+
+        }else if(specialChar.test(str) && numbers.test(str)){
+            response.innerHTML = "Try again! " + `${str}` + " has atleast one number and special character."
+            response.style.display = "block";
+
+        }else if(str.indexOf(' ') >= 0){
+            response.innerHTML = "Try again! " + `${str}` + " is not a single word."
+            response.style.display = "block";
+
+        }else if(specialChar.test(str)) {
+            response.innerHTML = "Try again! " + `${str}` + " has atleast one special character."
+            response.style.display = "block";
+
+        }else if(numbers.test(str)) {
+            response.innerHTML = "Try again! " + `${str}` + " has atleast one number."
+            response.style.display = "block";
         }
         else {
             isIsogram();
@@ -113,7 +93,7 @@ function evalString(str) {
 };    
 
 // DETERMINING IF THE STRING IS AN ISOGRAM
-function isIsogram(str) {
+function isIsogram() {
     var str = document.getElementById("isogramText").value;
 
     // create an empty array for comparison to letters array
@@ -135,14 +115,12 @@ function isIsogram(str) {
                 // resulting in newLetters.length < letter.length
     if(newLetters.length === letters.length) {
         // return true;
-        hideAll();
+        isTrue.innerHTML = `${str}` + " is an isogram."
         isTrue.style.display = "block";
-        isTrue.style.color = "#00FF2A";  
     }else {
         // return false;
-        hideAll();
+        isFalse.innerHTML = `${str}` + " is NOT an isogram."
         isFalse.style.display = "block";
-        isFalse.style.color = "#FF1919";
     }
     clearForm();
     

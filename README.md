@@ -35,13 +35,19 @@ An isogram is a word that has no repeating letters, consecutive or non-consecuti
 
 - Semantic HTML5 Markup
 - JavaScript
+  - String Methods
+  - Array Methods
   - Document Object Model
-  - ES6 
-- CSS
+  - Regular Expressions
+  - For Loops
+  - Conditional Operators
+  - Template Literals
+- CSS3
+
 
 ### What I learned
 
-As simple as this app may seem, it was challenging to implement a function that evaluates the input based on certain conditions prior to actually evaluating whether the input is an isogram or not.  I learned to how to create functions that used a combination of string & array methods, regular expressions, loops, conditional operators and DOM maipulation.
+As simple as this app may seem, it was challenging to implement a function that evaluates the input based on certain conditions prior to actually evaluating whether the input is an isogram or not.  I learned to how to create functions that used a combination of string & array methods, regular expressions, loops, conditional operators, template literals and DOM maipulation.
 
 ## Author
 

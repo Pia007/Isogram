@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 800px;
+    width: 850px;
     height: 450px;
     margin: 200px auto;
     display: flex;
@@ -68,6 +68,16 @@ body {
     margin: .4rem auto;
     color: orange;
 }
+.isoTrue {
+    text-align: center;
+    margin: .4rem auto;
+    color: #00FF2A;
+}
+.isoFalse {
+    text-align: center;
+    margin: .4rem auto;
+    color: #FF1919;
+}
 
 /* MAX-WIDTH 825PX*/
 @media screen and (max-width: 825px) {
@@ -75,7 +85,9 @@ body {
         width: 80%;
     }
     .intro,
-    .isoEval {
+    .isoEval,
+    .isTrue,
+    .isFalse {
         width: 80%;
         font-size: .8em;
         margin: 0 auto;
@@ -92,10 +104,12 @@ body {
 @media screen and (max-width: 500px) {
     .container {
         min-width: 340px;
-        height: 400px;
+        height: 420px;
     }
     .intro,
-    .isoEval {
+    .isoEval,
+    .isTrue,
+    .isFalse {
         font-size: .6em;
     }
 }
