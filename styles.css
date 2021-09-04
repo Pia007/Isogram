@@ -10,6 +10,7 @@ body {
     font-family: var(--roboto);
     font-size: 36px;
     background: gray;
+    overflow-y: hidden;
     
 }
 
@@ -27,6 +28,7 @@ body {
     border: 10px ridge white;
 }
 .intro {
+    margin: auto .5rem;
     text-align: center;
 }
 .input-holder {
