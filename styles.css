@@ -9,7 +9,7 @@ html,
 body {
     font-family: var(--roboto);
     font-size: 36px;
-    background: gray;
+    background: rgb(129, 126, 126);
     overflow-y: hidden;
     
 }

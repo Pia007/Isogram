@@ -1,4 +1,4 @@
-// File soley used to test function
+// File solely used to test function
 
 // THE CHALLENGE
 // An isogram is a word that has no repeating letters, consecutive or non-consecutive. 

@@ -1,4 +1,4 @@
-
+// File is src in html 
     
 const form = document.getElementById("form");
 const button = document.getElementById("check-input");
