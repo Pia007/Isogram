@@ -122,7 +122,7 @@ function isIsogram() {
         isFalse.innerHTML = `${str}` + " is NOT an isogram."
         isFalse.style.display = "block";
     }
-    clearForm();
+    // clearForm();
     
 };
 
