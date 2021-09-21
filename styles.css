@@ -104,6 +104,14 @@ body {
 
 /* MAX-WIDTH 500PX */
 @media screen and (max-width: 500px) {
+    html,
+    body {
+        overflow-y: hidden;
+        width: 100%;
+    }
+    body {
+        position: relative;
+    }
     .container {
         min-width: 340px;
         height: 420px;
