@@ -85,7 +85,7 @@ body {
 @media screen and (max-width: 825px) {
     .container {
         width: 80%;
-        margin: auto;
+        margin: auto; 
     }
     .intro,
     .isoEval,
